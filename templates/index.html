@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina di form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<!-- Inclusione del fragment Navbar -->
+<div   th:include="layout/navbar :: navbar"></div>
+
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh;" id="homeDiv" >
+        <h1>Computer Vecchi e Brutti</h1>
+        <img id="imgHome" src="/css/front.jpeg" alt="Immagine Prodotto">
+        <form action="/listaPcStore" method="GET">
+            <input type="submit" class="btn" value="Visualizza i prodotti">
+        </form>
+    </div>
+</body>
+</html>
